@@ -71,7 +71,7 @@ Un mot de passe d'application est un code à 16 caractères généré par Google
 
 **Réponse — Avez-vous bien obtenu un mot de passe d'application à 16 caractères ?**
 
-    (votre réponse ici)
+oui duig cfbm hfgm hzen
 
 ---
 
@@ -115,7 +115,7 @@ Vous devez voir une ligne confirmant que le SMTP est initialisé sans erreur.
 
 **Réponse — Quelle ligne de log confirme que le SMTP est bien chargé ?**
 
-    (votre réponse ici)
+    logger=settings ... level=info msg="Config overridden from Environment variable"
 
 ---
 
@@ -164,7 +164,7 @@ Cliquez sur **Test** puis **Save contact point**.
 
 **Réponse — Le message de test est-il bien apparu dans le channel Discord ?**
 
-    (votre réponse ici)
+    Oui!
 
 ---
 
@@ -241,7 +241,7 @@ Créez une nouvelle règle d'alerte avec les paramètres suivants.
 
 **Réponse — Quelle requête PromQL complète avez-vous utilisée ?**
 
-    (votre requête ici)
+    100 - (avg by(instance) (rate(node_cpu_seconds_total{mode="idle"}[5m])) * 100) > 80
 
 ---
 
@@ -251,11 +251,11 @@ Créez une règle qui déclenche une alerte lorsque la RAM disponible passe sous
 
 **Réponse — Quelle requête PromQL avez-vous utilisée ?**
 
-    (votre requête ici)
+    ( (node_memory_MemTotal_bytes - node_memory_MemAvailable_bytes) / node_memory_MemTotal_bytes ) * 100
 
 **Réponse — Quel seuil (threshold) avez-vous défini ?**
 
-    (votre réponse ici)
+    IS BELOW 15
 
 ---
 
@@ -265,7 +265,7 @@ Créez une règle qui déclenche une alerte lorsque le taux d'erreurs 5xx de l'a
 
 **Réponse — Quelle requête PromQL avez-vous utilisée ?**
 
-    (votre requête ici)
+   rate(http_requests_total{status=~"5.."}[5m])
 
 ---
 
@@ -290,7 +290,7 @@ Un email de notification doit arriver dans votre boîte mail.
 
 **Réponse — Combien de temps s'écoule entre l'arrêt de Node Exporter et la réception de l'email ?**
 
-    (votre réponse ici)
+    1 min
 
 ### Relancer l'instance
 
