@@ -72,7 +72,8 @@ Sauvegardez le panel.
 
 **Réponse — Listez les instances disponibles dans votre menu :**
 
-    (votre réponse ici)
+    <img width="202" height="238" alt="image" src="https://github.com/user-attachments/assets/c18a6cdb-7492-4cf1-9023-b30a4902f12b" />
+
 
 
 ### 4. Ajouter une variable `job`
@@ -84,11 +85,12 @@ Créez une deuxième variable pour filtrer par job Prometheus.
 | Type | `Query` |
 | Name | `job` |
 | Label | `Job` |
-| Query | `label_values(up, job)` |
+    | Query | `label_values(up, job)` |
 
 **Réponse — Quels jobs apparaissent dans le menu ?**
 
-    (votre réponse ici)
+    <img width="221" height="245" alt="image" src="https://github.com/user-attachments/assets/dbaa26cd-b7b1-4f39-b02b-207952dbce0d" />
+
 
 
 ### 5. Variable d'intervalle pour le rate()
@@ -111,7 +113,7 @@ sum by(route) (rate(http_requests_total[$interval]))
 
 **Réponse — Que se passe-t-il si vous choisissez un intervalle de 1m vs 30m ?**
 
-    (votre réponse ici)
+    le graphique représente moins de données quand c'est une minute masi il est plus précis
 
 
 ## Annotations
@@ -134,7 +136,7 @@ Les **annotations** permettent d'afficher des événements ponctuels sur vos gra
 
 **Réponse — A quoi cela peut-il servir en production ?**
 
-    (votre réponse ici)
+    ça permet de donner des informations utiles pour les alertes. ca permet de réagir plus vite et de rendre les erreurs compréhensibles
 
 
 ## Résultat
