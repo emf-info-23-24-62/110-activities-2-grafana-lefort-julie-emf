@@ -95,7 +95,7 @@ up
 
 **Réponse — Quel résultat observez-vous ?**
 
-    (votre réponse ici)
+on retrouve les différents services et leurs états (1101)
 
 
 ### Panel 2 — Utilisation CPU
@@ -113,7 +113,7 @@ up
 
 **Réponse — Quel est le pourcentage de CPU moyen observé ?**
 
-    (votre réponse ici)
+  45% environ
 
 
 ### Panel 3 — Mémoire disponible
@@ -133,7 +133,7 @@ up
 
 **Réponse — Quel est le pourcentage de RAM disponible ?**
 
-    (votre réponse ici)
+    29.3%
 
 
 ### Panel 4 — Espace disque utilisé
@@ -151,7 +151,7 @@ up
 
 **Réponse — Quel est le pourcentage d'espace disque utilisé ?**
 
-    (votre réponse ici)
+    no data we die like men
 
 
 ### Panel 5 — Requêtes HTTP par seconde (app NodeJS)
@@ -169,7 +169,7 @@ sum by(route) (rate(http_requests_total[1m]))
 
 **Réponse — Quelles routes génèrent le plus de trafic ?**
 
-    (votre réponse ici)
+/metrics
 
 
 ### Panel 6 — Taux d'erreurs HTTP
@@ -188,8 +188,8 @@ sum(rate(http_requests_total{status_code=~"5.."}[1m]))
 
 **Réponse — Y a-t-il des erreurs ? Sur quelle route ?**
 
-    (votre réponse ici)
-
+   pas d'erreur !!! trop tuff 
+   
 ### Panel 7 — Latence P95 des requêtes
 
 **Type de visualisation :** Time series
@@ -205,7 +205,7 @@ histogram_quantile(0.95, sum by(le, route) (rate(http_request_duration_seconds_b
 
 **Réponse — Quelle route a la latence la plus élevée ? Pourquoi ?**
 
-    (votre réponse ici)
+/metrics. parce que c'est la plus visitée et elle retourne plus de données que les autres
 
 
 ### Panel 8 — Utilisateurs actifs
@@ -223,7 +223,7 @@ app_active_users
 
 **Réponse — Comment évolue cette valeur dans le temps ?**
 
-    (votre réponse ici)
+elle fluctue en fonction du nb d'users actifs actuellement
 
 ## Sauvegarder le dashboard
 
