@@ -302,7 +302,7 @@ sudo systemctl start node_exporter
 
 **Réponse — Quelle est la différence entre une alerte Prometheus (Alertmanager) et une alerte Grafana Alerting ?**
 
-    (votre réponse ici)
+   les alertes prometheus fonctionnent uniquement avec des métriques prometheus alors que grafana a plusieurs sources de données possibles
 
 ---
 
@@ -326,7 +326,7 @@ Cliquez sur **Submit**.
 
 **Réponse — Les alertes sont-elles toujours évaluées pendant un Silence ?**
 
-    (votre réponse ici)
+    oui mais on ne reçoit juste pas de notification 
 
 ---
 
